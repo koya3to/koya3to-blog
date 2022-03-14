@@ -1,4 +1,4 @@
-baseURL = "https://koya3to.github.io/"
+baseURL = "https://koya3to.github.io/koya3to-blog/"
 title = "koya3to"
 theme = "hugo-coder"
 languageCode = "jp"
