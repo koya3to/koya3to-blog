@@ -1,4 +1,4 @@
-baseURL = "http://www.example.com"
+baseURL = "https://koya3to.github.io/koya3to"
 title = "koya3to"
 theme = "hugo-coder"
 languageCode = "jp"
@@ -10,6 +10,9 @@ pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
 # Enable Disqus comments
 # disqusShortname = "yourdiscussshortname"
+
+canonifyurls　= true
+publishDir = "docs"
 
 [params]
 author = "佐藤 晃矢/Koya Sato"
