@@ -11,7 +11,7 @@ enableEmoji = true
 # Enable Disqus comments
 # disqusShortname = "yourdiscussshortname"
 
-canonifyurls　= true
+canonifyurls = true
 publishDir = "docs"
 
 [params]
