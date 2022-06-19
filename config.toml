@@ -18,7 +18,7 @@ publishDir = "docs"
 author = "佐藤 晃矢/Koya Sato"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "koya3to's personal website"
-keywords = "data science,machine learning"
+keywords = "data science, machine learning"
 info = ["データで改善をぶん回す"]
 avatarURL = "images/profile.jpg"
 #gravatar = "john.doe@example.com"
@@ -102,11 +102,11 @@ series = "series"
 tag = "tags"
 author = "authors"
 
-[[params.social]]
-name = "Github"
-icon = "fa fa-2x fa-github"
-weight = 1
-url = "https://github.com/koya3to"
+# [[params.social]]
+# name = "Github"
+# icon = "fa fa-2x fa-github"
+# weight = 1
+# url = "https://github.com/koya3to"
 
 # [[params.social]]
 # name = "Gitlab"
@@ -114,11 +114,11 @@ url = "https://github.com/koya3to"
 # weight = 2
 # url = "https://gitlab.com/johndoe/"
 
-[[params.social]]
-name = "Twitter"
-icon = "fa fa-2x fa-twitter"
-weight = 3
-url = "https://twitter.com/koya3to/"
+# [[params.social]]
+# name = "Twitter"
+# icon = "fa fa-2x fa-twitter"
+# weight = 3
+# url = "https://twitter.com/koya3to/"
 
 [[params.social]]
 name = "LinkedIn"
