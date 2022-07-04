@@ -6,7 +6,21 @@
     <description>Recent content on koya3to</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp</language>
-    <lastBuildDate>Mon, 27 Jun 2022 20:53:35 +0900</lastBuildDate><atom:link href="https://koya3to.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jul 2022 22:00:09 +0900</lastBuildDate><atom:link href="https://koya3to.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FeatureGroupとLayerControlを使って地図に表示する情報を制御する&#43;popupをいい感じに整形する</title>
+      <link>https://koya3to.com/posts/folium-layer/</link>
+      <pubDate>Sat, 02 Jul 2022 22:00:09 +0900</pubDate>
+      
+      <guid>https://koya3to.com/posts/folium-layer/</guid>
+      <description>初めに    地図情報を可視化するPythonパッケージとして代表的なものにfoliumがあります． 今回はfoliumを利用して以下の2つの可視化を行う際の方法について紹介します．
+ 情報の種類ごとに表示有無を制御する方法 ポップアップ（文化財がクリックされたときに表示されるウィンドウ）の表示をテーブル形式でいい感じに表示する方法  具体例として，国が公開している都道府県指定文化財データを利用して，文化財の種類ごとに表示有無を制御します．また，各文化財がクリックされた場合の文化財情報をテーブル形式でいい感じに表示します．
+コードの全体についてはこちらにおいてあります．
+コードの説明    情報の種類に応じて表示有無を切り替える    方針としては，
+ ベースレイヤーを作成する． FeatureGroupで文化財の種類ごとにグループを作成する 作成したグループにマーカーを追加する それぞれ作成したグループをベースレイヤーに追加する． レイヤーコントロールをベースレイヤーに追加して，制御可能にする  実際のコードは以下のようになります．
+import folium from folium import FeatureGroup, LayerControl  # ベースレイヤーを作成する m = folium.Map(location=[&amp;#39;37.5178&amp;#39;, &amp;#39;138.9270&amp;#39;], zoom_start=10)  for index_i, prop_type in enumerate(cultural_gpd[&amp;#39;種別大分&amp;#39;].value_counts().index):  show = False  if prop_type in [&amp;#39;有形文化財&amp;#39;, &amp;#39;無形文化財&amp;#39;]:  show=True  # FeatureGroupで文化財の種類ごとにグループを作成する．showで最初にどの情報を選択するか制御可能  temp_group = FeatureGroup(name=prop_type, show=show)  for index_j, row in cultural_gpd[cultural_gpd[&amp;#39;種別大分&amp;#39;]==prop_type].</description>
+    </item>
+    
     <item>
       <title>A/Bテストの落とし穴</title>
       <link>https://koya3to.com/posts/delta-method/</link>
